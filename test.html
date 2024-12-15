@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WhereIsMy@ Test</title>
+</head>
+<body>
+  <h1>Email Entry Tests</h1>
+  <p>If the entry is valid, a new entry is supposed to be appear as the last row of the log table.</p>
+  <p>To see the logs, just click on the extension button.</p>
+
+  <form>
+    <p>Test the logs when</pp>
+       <ul>
+        <li>1. you enter your email you specified in the extension settings,</li>
+        <li>2. you submit your email you specified in the extension settings.</li>
+       </ul>
+
+       <p><b>IMPORTANT: There is no real submit in the background.</b></p>
+    <label for="email">Enter your email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email here">
+    <button type="submit">Submit</button>
+  </form>
+  <hr>
+  <form>
+    <p>Test the logs when you just enter an email other than you specified in the extension settings.</p>
+    <label for="another-email">Another Email Field:</label>
+    <input type="email" id="another-email" name="another-email" placeholder="Enter another email here">
+  </form>
+  <hr>
+  <form>
+    <p>Test the logs when you just enter email into a generic input box with or without submit.</p>
+    <label for="generic-input">Generic Text Input:</label>
+    <input id="generic-input" type="text" placeholder="Enter something">
+    <button type="submit">Submit</button>
+</form>
+</body>
